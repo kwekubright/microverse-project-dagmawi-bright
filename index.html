@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media (max-width: 600px) {
+    div.grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    
+    div.project-title a {
+      padding: 4px;
+      font-size: 14px;
+    }
+  }
+    </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
     <section id="welcome-section">
-      <h1>Hey, I'm Mimic</h1>
-      <p>a web developer</p>
+      <h1 id="title">Hey, I'm Mimic</h1>
+      <p id="description">a web developer</p>
      </section> 
     
       <section id="projects">
@@ -19,34 +32,34 @@
         <div class="grid-container">
           <div class="project">
             <img src="https://scholarshiptrackblog.files.wordpress.com/2020/12/38.png?w=968&h=968&crop=1" alt="">
-            <div id="profile-link" class="project-title"><a href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
+            <div class="project-tile"><a id="profile-link"  href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
             </div>
           </div>
       
           <div class="project">
             <img src="https://scholarshiptrackblog.files.wordpress.com/2020/12/38.png?w=968&h=968&crop=1" alt="">
-            <div id="profile-link" class="project-title"><a href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
+            <div  class="project-tile"><a id="profile-link" href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
             </div>
           </div>
       
           <div class="project">
             <img src="https://scholarshiptrackblog.files.wordpress.com/2020/12/38.png?w=968&h=968&crop=1" alt="">
-            <div id="profile-link" class="project-title"><a href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
+            <div  class="project-tile"><a  id="profile-link" href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
             </div>
           </div>
           <div class="project">
             <img src="https://scholarshiptrackblog.files.wordpress.com/2020/12/38.png?w=968&h=968&crop=1" alt="">
-            <div id="profile-link" class="project-title"><a href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
+            <div  class="project-tile"><a id="profile-link" href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
             </div>
           </div>
           <div class="project">
             <img src="https://scholarshiptrackblog.files.wordpress.com/2020/12/38.png?w=968&h=968&crop=1" alt="">
-            <div id="profile-link" class="project-title"><a href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
+            <div class="project-tile"><a id="profile-link"  href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
             </div>
           </div>
           <div class="project">
             <img src="https://scholarshiptrackblog.files.wordpress.com/2020/12/38.png?w=968&h=968&crop=1" alt="">
-            <div id="profile-link" class="project-title"><a href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
+            <div class="project-tile"><a id="profile-link"  href="https://github.com/kwekubright/microverse-project-dagmawi-bright" target="_blank">Tribute page</a>
             </div>
           </div>
         </div><br>
@@ -57,7 +70,7 @@
         <ul>
           <li><a href="#welcome-section">About</a></li>
         <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li></ul>
+        </ul>
         </nav>
   </body>
 </html>
