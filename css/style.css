@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root {
+  --navy-blue: #00308F;
+  --darknavy-blue: #0a2351;
+  --plain-white: #ffffff;
+  --light-blue: #d4e9ff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;  
+}
+
+html {
+  font-family: 'Jost', sans-serif;
+  color: var(--darknavy-blue);
+  line-height: 1.6;
+  background-image: url("https://www.transparenttextures.com/patterns/blizzard.png");
+  scroll-behavior: smooth;
+}
+
 #welcome-section {
   height: 100vh;
   color: var(--darknavy-blue);
@@ -22,3 +45,125 @@
   font-size: 1.75rem;
   margin-bottom: 26px;
 }
+
+.grid-container {
+    display: grid;
+    grid-gap: 32px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  @media (max-width: 600px) {
+    div.grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    
+    div.project-title a {
+      padding: 4px;
+      font-size: 14px;
+    }
+  }
+  
+  .project {
+    border: 2.5px solid var(--darknavy-blue);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-title a {
+    text-decoration: none;
+    display: block;
+    background:  var(--plain-white); 
+    color: var(--darknavy-blue);
+    border-top: 2.5px solid var(--darknavy-blue);
+    transition: all 80ms linear 40ms;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .project a:hover {
+    background: var(--light-blue);;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  button {
+    padding: 9px 18px;
+    background:  var(--plain-white); 
+    color: var(--darknavy-blue);
+    font-size: 20px;
+    border: 2px solid var(--darknavy-blue);
+    border-radius: 30px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 80ms linear 40ms;
+  }
+  
+  button:hover {
+    background: var(--light-blue);
+    border: 2.4px solid var(--darknavy-blue);
+  }
+  
+  @media (max-width: 600px) {
+    button {
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1.8px solid var(--darknavy-blue);
+    }
+    
+    .project {
+      border: 1.8px solid var(--darknavy-blue);
+      border-radius: 2;
+      
+    }
+    .project-title a {
+      border-top: 1.8px solid var(--darknavy-blue);
+    }
+  }
+  
+
+  #navbar {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: var(--darknavy-blue);
+  }
+  
+  #navbar ul {
+    margin-right: 20px;
+  }
+  
+  #navbar li {
+    display: inline;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: var(--plain-white);
+    padding: 20px; 
+    font-size: 20px;
+    transition: all 80ms linear 40ms;
+  }
+  
+  #navbar a:hover {
+    opacity: 0.6;
+  }
+  
+  @media(max-width: 600px) {
+    #navbar {
+    justify-content: center;
+    padding: 14px; 
+    }
+    
+    #navbar a {
+    padding: 14px;
+    }
+  }
