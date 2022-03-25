@@ -1,15 +1,24 @@
+#welcome-section {
+  height: 100vh;
+  color: var(--darknavy-blue);
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-#welcome-section  {
-    height: 100vh;
-    color: var(--darknavy-blue);
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #welcome-section h1 {
-    font-family: 'Permanent Marker', cursive;
-  }
-  
+#welcome-section h1 {
+  font-family: "Permanent Marker", cursive;
+}
+
+#projects {
+  background: var(--plain-white);
+  text-align: center;
+  padding: 24px;
+}
+
+#projects p {
+  font-size: 1.75rem;
+  margin-bottom: 26px;
+}
